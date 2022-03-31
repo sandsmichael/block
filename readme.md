@@ -1,3 +1,38 @@
+
+scp: local to ec2
+scp -i blah.pem /your/local/file/to/copy user@ec2-xx-xx-xxx-xxx.compute-1.amazonaws.com:path/to/file
+
+scp: ec2 to local
+scp -i sandsmichael.pem ubuntu@ec2-54-167-32-57.compute-1.amazonaws.com:/home/ubuntu/xyz.pub /Users/michaelsands/code/block/pyblock/xyz.pub
+
+for aws remember chmod 400 yourPublicKeyFile.pem to make file  only readable by root andnot publicly visible
+
+openssl via ubuntu on ec2
+sudo apt-get install openssl        
+generates a private key (.pem):         openssl genrsa -out xyz.pem 1024
+use the private key to generate a public key (.pub):    openssl rsa -in xyz.pem -pubout > xyz.pub
+
+
+ssh -i "....pem" ubuntu@ec2-54-167-32-57.compute-1.amazonaws.com
+
+
+
+
+
+
+
+
+
+mac
+brew update
+brew install openssl
+echo 'export PATH="/usr/local/opt/openssl/bin:$PATH"' >> ~/.bash_profile
+source ~/.bash_profile
+
+
+
+
+
 2022.02.15
 -- -- -- --
 
