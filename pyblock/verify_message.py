@@ -4,7 +4,18 @@ from cryptography.hazmat.primitives.asymmetric import rsa
 from cryptography.hazmat.primitives import serialization
 from cryptography.hazmat.primitives import hashes
 
-'''sign a message with a private key and verify it with a public key'''
+'''
+sign a message with a private key and verify it with a public key
+
+- calculate the hash of the message
+- decrypt the signature using public key
+- compare decrypted signature with calculated hash
+- if they match valid, else invalid
+
+- my private key is necesary for me to be able to sign a message that can then be verified with my public key (which itself was derived from theprivate key)
+- using the same private key, a signature can be created that is unique to the message  being  assigned
+
+'''
 
 # Configuration
 GENERATE_PRIVATE_KEY = False
