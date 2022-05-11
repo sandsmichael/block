@@ -1,4 +1,19 @@
 
+--
+
+npm install ganache-cli --save-dev
+node_modules/.bin/ganache-cli | grep Mnemonic
+npm run ganache
+curl http://127.0.0.1:8545 \
+    -X POST \
+    -H "Content-Type: application/json" \
+    -d '{"jsonrpc": "2.0", "method": "web3_clientVersion"}'
+npm install concurrently --save-dev
+npm run start
+
+
+--
+
 scp: local to ec2
 scp -i blah.pem /your/local/file/to/copy user@ec2-xx-xx-xxx-xxx.compute-1.amazonaws.com:path/to/file
 
@@ -14,14 +29,6 @@ use the private key to generate a public key (.pub):    openssl rsa -in xyz.pem 
 
 
 ssh -i "....pem" ubuntu@ec2-54-167-32-57.compute-1.amazonaws.com
-
-
-
-
-
-
-
-
 
 mac
 brew update

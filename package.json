@@ -1,5 +1,5 @@
 {
   "devDependencies": {
-    "@truffle/hdwallet-provider": "^2.0.3"
+    "concurrently": "^7.1.0"
   }
 }
