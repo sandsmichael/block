@@ -1,6 +1,11 @@
 
---
+git clean -df
+git rm --cached -r .
+git checkout HEAD
 
+
+
+----------
 npm install ganache-cli --save-dev
 node_modules/.bin/ganache-cli | grep Mnemonic
 npm run ganache
