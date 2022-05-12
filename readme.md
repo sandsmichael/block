@@ -3,6 +3,15 @@ git clean -df
 git rm --cached -r .
 git checkout HEAD
 
+https://trufflesuite.com/ganache/
+
+truffle console
+todolist = await TodoList.deployed()
+    -- use async await for asyncronous interactions
+todolist
+todolist.address
+todolist.tasksCount()
+tasksCount  =  await TodoList.tasksCount()
 
 
 ----------
