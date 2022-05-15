@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "@chainlink/contracts": "^0.4.1",
+    "deploy": "vsce publish"
+
+  }
+
+}

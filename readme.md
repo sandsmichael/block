@@ -1,7 +1,20 @@
+####
+npm i @chainlink/contracts
+yarn add @chainlink/contracts
+-- download dependency files localy; set vs code "solidity default workspace compiler" --> local file
+truffle compile
 
+
+https://github.com/juanfranblanco/vscode-solidity/issues/178
+
+https://stackoverflow.com/questions/67321111/file-import-callback-not-supported
+
+-----------
 git clean -df
 git rm --cached -r .
 git checkout HEAD
+
+//import "github.com/oraclize/ethereum-api/provableAPI.sol";
 
 https://trufflesuite.com/ganache/
 
