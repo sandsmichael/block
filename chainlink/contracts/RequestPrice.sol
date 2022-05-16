@@ -37,7 +37,7 @@ contract RequestPrice is ChainlinkClient {
         return sendChainlinkRequestTo(oracle, request, fee);
     }
 
-      /**
+     /**
      * Callback Function
      */
     function fulfill(bytes32 _requestId, uint256 _price) public recordChainlinkFulfillment(_requestId)
