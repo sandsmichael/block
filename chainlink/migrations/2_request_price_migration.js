@@ -1,5 +1,5 @@
-// const Migrations = artifacts.require("RequestPrice");
+const RequestPrice = artifacts.require("RequestPrice");
 
-// module.exports = function (deployer) {
-//   deployer.deploy(Migrations);
-// };
+module.exports = function (deployer) {
+  deployer.deploy(RequestPrice);
+};
