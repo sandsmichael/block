@@ -12,10 +12,20 @@ contract RequestPrice is ChainlinkClient {
     bytes32 private jobId;
     uint256 private fee;
 
+
+    /**
+     * @notice Initialize the link token and target oracle
+     *
+     * Kovan Testnet details:
+     * Link Token: 0xa36085F69e2889c224210F603D836748e7dC0088
+     * Oracle: 0x74EcC8Bdeb76F2C6760eD2dc8A46ca5e581fA656 (Chainlink DevRel)
+     * jobId: ca98366cc7314957b8c012c72f05aeeb
+     *
+     */
     constructor() {
-        setPublicChainlinkToken();
-        oracle = 0xc57B33452b4F7BB189bB5AfaE9cc4aBa1f7a4FD8;
-        jobId = "d5270d1c311941d0b08bead21fea7747";
+        // setPublicChainlinkToken();
+        oracle = 0x74EcC8Bdeb76F2C6760eD2dc8A46ca5e581fA656;
+        jobId = "ca98366cc7314957b8c012c72f05aeeb";
         fee = 0.1 * 10 ** 18; 
     }
 
