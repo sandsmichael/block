@@ -70,6 +70,8 @@ cd contracts
         > Total deployments:   2
         > Final cost:          0.03001138 ETH
 
+<alt>truffle develop; >  migrate --reset 
+
 3A. fund the smart contract by sending link to the contract addy [check balance in truffle stdout / console log]
    > contract address:    0xD0cF0E3DD0F01952D658663f43723a4450A6Bc3B
 
